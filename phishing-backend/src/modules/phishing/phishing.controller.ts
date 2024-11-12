@@ -17,8 +17,8 @@ export class PhishingController {
   }
 
   @Get('click')
-  async markClick(@Query('email') email: string) {
-    return this.phishingService.attemptClicked(email);
+  async markClick(@Query('id') id: string) {
+    return this.phishingService.attemptClicked(id);
   }
 
   @Get('attempts')
